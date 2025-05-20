@@ -1,96 +1,164 @@
-# Contributing to Amy WhatsApp Assistant
+# Contributing to A1Base AI Chat Agent
 
-Thank you for considering contributing to this project! This document outlines the process for contributing to the Amy WhatsApp Assistant.
+Thank you for your interest in contributing to the A1Base AI Chat Agent! We welcome contributions from the community and are excited to help you make this project better.
 
-## Code of Conduct
+## 🤝 Code of Conduct
 
-By participating in this project, you agree to maintain a respectful and inclusive environment. We expect all contributors to:
+By participating in this project, you agree to abide by our Code of Conduct:
 
-- Use welcoming and inclusive language
-- Be respectful of differing viewpoints and experiences
-- Gracefully accept constructive criticism
-- Focus on what's best for the community
-- Show empathy towards other community members
+- Be respectful and inclusive
+- Exercise consideration and empathy
+- Focus on constructive feedback
+- Maintain a harassment-free experience for everyone
 
-## How Can I Contribute?
+## 🚀 Getting Started
 
-### Reporting Bugs
+1. **Fork the Repository**
+   - Click the 'Fork' button on GitHub
+   - Clone your fork locally:
+     ```bash
+     git clone https://github.com/your-username/a1base-ai-agent
+     cd a1base-ai-agent
+     ```
 
-Before creating bug reports, please check the issue list to see if the problem has already been reported. When creating a bug report, include as many details as possible:
+2. **Set Up Development Environment**
+   - Install dependencies:
+     ```bash
+     npm install
+     ```
+   - Copy environment configuration:
+     ```bash
+     cp .env.example .env.local
+     ```
+   - Configure your environment variables
 
-- A clear and descriptive title
-- Exact steps to reproduce the issue
-- Expected behavior vs. observed behavior
-- Screenshots if applicable
-- Environment details (OS, browser, etc.)
-- Any relevant logs or error messages
+3. **Create a Branch**
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-### Suggesting Enhancements
+## 📝 Development Guidelines
 
-Enhancement suggestions are welcome! When suggesting an enhancement:
+### Code Style
 
-- Use a clear and descriptive title
-- Provide a detailed description of the suggested enhancement
-- Explain why this enhancement would be useful to most users
-- Provide examples of how it would be used
+- Use TypeScript for all new code
+- Follow existing code formatting (Prettier configuration)
+- Maintain consistent naming conventions
+- Add JSDoc comments for functions and complex logic
+
+### Commit Messages
+
+Follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
+
+- `feat:` New features
+- `fix:` Bug fixes
+- `docs:` Documentation changes
+- `style:` Code style updates
+- `refactor:` Code refactoring
+- `test:` Test updates
+- `chore:` Maintenance tasks
+
+Example:
+```
+feat: add message history persistence
+```
 
 ### Pull Requests
 
-1. Fork the repository
-2. Create a new branch from `main`
-3. Make your changes
-4. Run tests if applicable
-5. Submit a pull request
+1. **Before Submitting**
+   - Update your fork to the latest main branch
+   - Run tests: `npm test`
+   - Ensure linting passes: `npm run lint`
+   - Update documentation if needed
 
-#### Pull Request Guidelines
+2. **PR Guidelines**
+   - Provide a clear, descriptive title
+   - Include relevant issue numbers
+   - Add detailed description of changes
+   - Include screenshots for UI changes
+   - Update tests and documentation
 
-- Update the README.md with details of changes if applicable
-- Update the documentation accordingly
-- The PR should work for Node.js 18.x or newer
-- Follow the existing code style
-- Include relevant tests if possible
-- Reference any relevant issues in your PR description
+3. **PR Template**
+   ```markdown
+   ## Description
+   [Describe your changes]
 
-## Development Setup
+   ## Type of Change
+   - [ ] Bug fix
+   - [ ] New feature
+   - [ ] Documentation update
+   - [ ] Code refactor
+   - [ ] Other (please specify)
 
-1. Clone your fork of the repository
-2. Install dependencies: `npm install`
-3. Create a `.env.local` file based on `.env.example`
-4. Start the development server: `npm run dev`
+   ## Related Issues
+   Fixes #[issue number]
 
-## Project Structure
+   ## Testing
+   [Describe how you tested your changes]
 
-- `a1framework/` - Contains the A1Framework core code
-- `components/` - UI components
-- `lib/` - Utility functions and business logic
-- `app/` - Next.js app router components and API routes
-- `public/` - Static assets
+   ## Screenshots (if applicable)
+   ```
 
-## Styling Guidelines
+## 🧪 Testing
 
-- Follow the existing Tailwind CSS patterns
-- Maintain accessibility standards
-- Use the existing color scheme and UI components
+- Write tests for new features
+- Update existing tests when modifying features
+- Ensure all tests pass before submitting PR
+- Include both unit and integration tests where appropriate
 
-## Testing
+## 📚 Documentation
 
-- Run tests with `npm test`
-- Ensure all existing tests pass
-- Add tests for new features when possible
+- Update README.md for user-facing changes
+- Add JSDoc comments for new functions
+- Update API documentation if endpoints change
+- Include code examples for new features
 
-## Documentation
+## 🐛 Bug Reports
 
-Good documentation is crucial for this project. When adding or modifying features:
+When filing an issue:
 
-- Update relevant README sections
-- Add/update JSDoc comments for functions
-- Document API endpoints
-- Create example usage if applicable
+1. Use the bug report template
+2. Include clear steps to reproduce
+3. Provide environment details
+4. Add relevant code snippets
+5. Include error messages and logs
 
-## License
+## ✨ Feature Requests
 
-By contributing to this project, you agree that your contributions will be licensed under the project's MIT License.
+When proposing new features:
+
+1. Use the feature request template
+2. Explain the use case
+3. Describe expected behavior
+4. Provide example scenarios
+5. Consider implementation approach
+
+## 📋 Review Process
+
+1. All PRs require at least one reviewer
+2. Address review comments promptly
+3. Maintain discussion in PR comments
+4. Request re-review after updates
+5. Squash commits before merging
+
+## 🚀 Release Process
+
+1. Version bumps follow [Semantic Versioning](https://semver.org/)
+2. Update CHANGELOG.md with changes
+3. Create release notes
+4. Tag releases appropriately
+
+## 💬 Getting Help
+
+- Join our [Discord community](https://discord.gg/your-server)
+- Check existing issues and discussions
+- Reach out to maintainers
+- Review documentation
+
+## 📄 License
+
+By contributing, you agree that your contributions will be licensed under the MIT License.
 
 ---
 
-Thank you for contributing to Amy WhatsApp Assistant! 
+Thank you for contributing to making A1Base AI Chat Agent better for everyone! 🙏 
