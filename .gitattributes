@@ -1,0 +1,34 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# TypeScript and JavaScript files
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
+
+# Next.js and React specific files
+next.config.ts linguist-language=TypeScript
+next.config.js linguist-language=JavaScript
+next-env.d.ts linguist-language=TypeScript
+tailwind.config.ts linguist-language=TypeScript
+postcss.config.mjs linguist-language=JavaScript
+
+# Documentation
+*.md linguist-documentation=false
+*.md linguist-detectable=true
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+
+# Exclude build artifacts from language statistics
+a1framework/.next/** linguist-generated=true
+a1framework/node_modules/** linguist-generated=true 
